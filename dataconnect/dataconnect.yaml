@@ -1,0 +1,12 @@
+specVersion: "v1"
+serviceId: "firestore-import"
+location: "europe-west1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "firestore-import-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
